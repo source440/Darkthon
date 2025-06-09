@@ -1,3 +1,9 @@
+databases:
+  - name: DarkthonDB
+    ipAllowList: []
+    region: frankfurt
+    plan: free
+
 services:
   - type: web
     plan: free
@@ -5,7 +11,7 @@ services:
     env: python
     repo: https://github.com/source440/Darkthon
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 main.py
+    startCommand: python3 server.py & python3 -m Tepthon
     region: frankfurt
     envVars:
       - key: ALIVE_NAME
@@ -24,3 +30,7 @@ services:
         value: Asia/Amman
       - key: PYTHON_VERSION
         value: 3.10.9
+      - key: DATABASE_URL
+        fromDatabase:
+          name: DarkthonDB
+          property: connectionString
