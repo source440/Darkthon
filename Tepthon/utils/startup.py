@@ -174,7 +174,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت تيبثـون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت جميثون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
@@ -197,7 +197,7 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/b920419da499a55479a15.jpg",
+                "https://i.ibb.co/nMbgGwNG/666aa396fe1f.jpg",
                 caption="**•⎆┊تـم بـدء تشغـيل سـورس جميثون الخاص بك .. بنجاح 🧸♥️**",
                 buttons=[(Button.url("𝒔𝒐𝒖𝒓𝒄𝒆 𝒋𝒆𝒎𝒕𝒉𝒐𝒏 🇾🇪", "https://t.me/jemthon"),)],
             )
