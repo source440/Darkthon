@@ -97,7 +97,7 @@ async def bot_start(event):
         zz_ch = user.username
     else:
         zz_txt = "⌔ قنـاة السـورس ⌔"
-        zz_ch = "Tepthon"
+        zz_ch = "jemthon"
     custompic = gvarstatus("BOT_START_PIC") or None
     if chat.id != Config.OWNER_ID:
         customstrmsg = gvarstatus("START_TEXT") or None
