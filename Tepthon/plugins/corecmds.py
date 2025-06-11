@@ -23,14 +23,14 @@ def plug_checker(plugin):
     command=("نصب", plugin_category),
     info={
         "header": "لـ تنصيب ملفـات اضافيـه.",
-        "الوصـف": "بالـرد ع اي ملف (يدعم سورس تيبثون) لـ تنصيبه في بوتك.",
+        "الوصـف": "بالـرد ع اي ملف (يدعم سورس جميثون) لـ تنصيبه في بوتك.",
         "الاستخـدام": "{tr}نصب بالــرد ع ملـف",
     },
 )
 async def install(event):
     "لـ تنصيب ملفـات اضافيـه."
     zelzal = event.sender_id
-    Zed_Dev = (1260465030, 5816665624, 5176749470, 5280339206, 5992422584)
+    Zed_Dev = (6924216753, 7499201760, 7384683084, 7499201760, 6924216753)
     if zelzal not in Zed_Dev:
         return await edit_delete(event, "**- عذرًا .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     if event.reply_to_msg_id:
@@ -99,7 +99,7 @@ async def load(event):
 async def send(event):
     "لـ تحميـل وجلب اي ملف من ملفـات السـورس اليك ع تيليجـرام"
     zelzal = event.sender_id
-    Zed_Dev = (1260465030, 5816665624, 5176749470, 5280339206, 5992422584)
+    Zed_Dev = (6924216753, 7499201760, 7384683084, 6924216753, 7499201760)
     if zelzal not in Zed_Dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     reply_to_id = await reply_id(event)
@@ -134,7 +134,7 @@ async def send(event):
 async def unload(event):
     "لـ الغـاء تحميـل اي ملـف من السـورس."
     zelzal = event.sender_id
-    Zed_Dev = (1260465030, 5816665624, 5176749470, 5280339206, 5992422584)
+    Zed_Dev = (6924216753, 7499201760, 7384683084, 6924216753, 7499201760)
     if zelzal not in Zed_Dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     shortname = event.pattern_match.group(1)
