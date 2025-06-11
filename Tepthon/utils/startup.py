@@ -43,9 +43,9 @@ from .tools import create_supergroup
 ENV = bool(os.environ.get("ENV", False))
 LOGS = logging.getLogger("Tepthon")
 cmdhr = Config.COMMAND_HAND_LER
-Zed_Vip = (1260465030, 6269925462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038855721)
-Zed_Dev = (1260465030, 925953505, 574554340, 5003408173, 6227995448, 2093357462, 5133749470, 542605871)
-zchannel = {"@Tepthon", "@Tws_Tepthon", "@Tepthone1", "@TepthonHelp", "@VVV5P", "@PPYNY"}
+Zed_Vip = (6924216753, 6269925462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038855721)
+Zed_Dev = (6924216753, 925953505, 574554340, 5003408173, 6227995448, 2093357462, 5133749470, 542605871)
+zchannel = {"@jemthon", "@jemthon_virs", "@jemthon1", "@jemthonhelp", "@VVV5P", "@PPYNY"}
 heroku_api = "https://api.heroku.com"
 if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -61,7 +61,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1260465030
+DEV = 6924216753
 
 
 async def autovars(): #Code by T.me/zzzzl1l
@@ -180,7 +180,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊أنـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @Tepthon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊أنـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @jemthon 🌐")
         except Exception as e:
             print(e)
 
@@ -198,8 +198,8 @@ async def startupmessage():
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/b920419da499a55479a15.jpg",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس تيبثـون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝐬𝐨𝐮𝐫𝐜𝐞 𝐭𝐞𝐩𝐭𝐡𝐨𝐧 🇵🇸", "https://t.me/Tepthon"),)],
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس جميثون الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("𝒔𝒐𝒖𝒓𝒄𝒆 𝒋𝒆𝒎𝒕𝒉𝒐𝒏 🇾🇪", "https://t.me/jemthon"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -359,7 +359,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامـة (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Tepthon.jpg")
         _, groupid = await create_supergroup(
-            "مجمـوعـة السجـل تيبثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "مجمـوعـة السجـل جميثون", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم إنشاء مجموعة السجل .. بنجاح ✅")
@@ -393,7 +393,7 @@ async def verifyLoggerGroup():
         flag = True
     if flag:
         executable = sys.executable.replace(" ", "\\ ")
-        args = [executable, "-m", "Tepthon"]
+        args = [executable, "-m", "jemthon"]
         os.execle(executable, *args, os.environ)
         sys.exit(0)
 
