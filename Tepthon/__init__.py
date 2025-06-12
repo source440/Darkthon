@@ -14,7 +14,7 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 __version__ = "3.3.3"
 __license__ = "حقـوق سـورس جميثون"
 __author__ = "جميثون <https://T.me/jemthon>"
-__copyright__ = "Tepthon Source (C) 2020 - 2024  " + __author__
+__copyright__ = "jemthon Source (C) 2020 - 2024  " + __author__
 
 zedub.version = __version__
 LOGS = logging.getLogger("جميثون")
